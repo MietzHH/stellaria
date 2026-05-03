@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#0a0a1f">
 <title>Stellaria</title>
- <link rel="manifest" href="manifest.json">
+<link rel="manifest" href="manifest.json">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='3' fill='%23ffd97a'/%3E%3Ccircle cx='25' cy='30' r='1.5' fill='white'/%3E%3Ccircle cx='75' cy='35' r='1.5' fill='white'/%3E%3Ccircle cx='30' cy='75' r='1.5' fill='white'/%3E%3Ccircle cx='70' cy='70' r='1.5' fill='white'/%3E%3C/svg%3E">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
@@ -1673,6 +1673,9 @@ function switchView(target) {
   document.getElementById("skyControls").style.display = "none";
   document.getElementById("infoBtn").style.display = "none";
 
+  // Beide Buttons auf Standard-Labels zurücksetzen
+  document.getElementById("galleryBtn").textContent = "Sammlung";
+  document.getElementById("skyBtn").textContent = "Himmel";
   document.getElementById("galleryBtn").classList.remove("active");
   document.getElementById("skyBtn").classList.remove("active");
 
@@ -1702,8 +1705,6 @@ function switchView(target) {
     document.getElementById("stage").style.display = "flex";
     document.getElementById("footer").style.display = "block";
     document.getElementById("infoBtn").style.display = "block";
-    document.getElementById("galleryBtn").textContent = "Sammlung";
-    document.getElementById("skyBtn").textContent = "Himmel";
     renderConstellation();
   }
 }
