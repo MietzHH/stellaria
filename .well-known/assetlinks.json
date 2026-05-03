@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "de.mietzmedia.stellaria",
+    "sha256_cert_fingerprints": ["B2:2F:B7:A7:FA:7F:5C:95:78:0C:3E:32:99:A7:FC:D4:23:D1:0E:83:A4:93:49:83:CF:28:3E:EC:5E:4A:BB:7D"]
+  }
+}]
